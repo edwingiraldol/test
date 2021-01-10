@@ -1,0 +1,81 @@
+<form class="agegate-form" #agegateForm ="ngForm" (ngSubmit) = "onSubmit(agegateForm.value)">
+    <div class="block-title">
+        <h2 class="title">Para continuar con la experiencia debes ser mayor de edad</h2>
+    </div>
+    <div data-drupal-selector="edit-row-1" id="edit-row-1" class="js-form-wrapper form-group col-auto">
+        <div data-drupal-selector="edit-row-2" id="edit-row-2" class="">
+            <fieldset class="js-form-item js-form-type-number form-type-number js-form-item-day form-item-day form-no-label form-group col-auto">
+                <input ngModel type="number" id="edit-day" name="day" value="" step="1" min="1" max="31" required>
+            </fieldset>
+
+            <fieldset class="js-form-item js-form-type-number form-type-number js-form-item-day form-item-day form-no-label form-group col-auto">
+                <input ngModel type="number" id="edit-month" name="month" value="" step="1" min="1" max="12" required>
+            </fieldset>
+
+
+            <fieldset class="js-form-item js-form-type-number form-type-number js-form-item-day form-item-day form-no-label form-group col-auto">
+                <input ngModel  type="number" id="edit-year" name="year" value="" step="1" min="1920" max="2020" required>
+            </fieldset>
+
+        </div>
+        <div data-drupal-selector="edit-row-3" id="edit-row-3" class="js-form-wrapper form-group col-auto">
+            <button
+                data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Entrar"
+                class="button js-form-submit form-submit btn btn-primary">Entrar
+            </button>
+        </div>
+    </div>
+    <div class="block-labels">
+        <div class="row">
+            <div class="col-4 col-sm">
+                <p class="dd">Día</p>
+            </div>
+            <div class="col-4 col-sm">
+                <p class="mm">Mes</p>
+            </div>
+            <div class="col-4 col-sm">
+                <p class="yy">Año</p>
+            </div>
+        </div>
+    </div>
+    <div class="block-btn">
+        <div class="btn btn-agegate"><span>Entrar</span></div>
+    </div>
+    <div data-drupal-selector="edit-row-4" id="edit-row-4" class="js-form-wrapper form-group col-auto">
+
+
+        <div class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-remember form-item-remember">
+            <input data-drupal-selector="edit-remember" type="checkbox" id="edit-remember" name="remember" value="1"
+                class="form-checkbox form-check-input">
+            <label
+                class="js-form-item js-form-type-checkbox checkbox form-check js-form-item-remember form-item-remember form-check-label"
+                for="edit-remember">
+                Recordarme en este equipo
+            </label>
+        </div>
+        <div class="recordar-datos">No deberías seleccionar "recordar mis datos" si compartes este computador con
+            menores de edad.</div>
+    </div>
+    <div class="facebook_wrapper">
+        <div class="row">
+            <div class="col-sm col-facebook">
+                <div id="block-fboauth-connect" class="fb-login-button d-block mr-auto"
+                    data-scope="email, public_profile" data-max-rows="1" data-size="large" data-button-type="login_with"
+                    data-show-faces="false" data-use-continue-as="true" data-auto-logout-link="false">
+                    conectar con facebook
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="legal-facebook">
+                    <p>*Al hacer Facebook connect aceptas los términos y condiciones y las políticas de privacidad de
+                        nuestro website</p>
+                </div>
+            </div>
+        </div>
+    </div><input autocomplete="off" data-drupal-selector="form-qzppc8pmkp0tkacrkud7fy8m1jwe2n-le-86jsqmzc8"
+        type="hidden" name="form_build_id" value="form-QZPPc8pmKp0tKacRKud7fY8M1jwe2n-Le-86JsqMZc8"
+        class="form-control">
+    <input data-drupal-selector="edit-agegate-form" type="hidden" name="form_id" value="agegate_form"
+        class="form-control">
+
+</form>
